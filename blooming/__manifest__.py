@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "blooming",
+    'name': "Blooming",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Management of the Content module""",
 
     'description': """
-        Long description of module's purpose
+        Content part of the Module
     """,
 
-    'author': "My Company",
+    'author': "NERD S.L",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
