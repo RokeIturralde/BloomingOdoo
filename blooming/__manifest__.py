@@ -3,10 +3,10 @@
     'name': "Blooming",
 
     'summary': """
-        Management of the Content module""",
+        Module of our application Blooming""",
 
     'description': """
-        Content part of the Module
+        This app is able to 
     """,
 
     'author': "NERD S.L",
@@ -29,6 +29,6 @@
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        'demo/content.xml',
     ],
 }
