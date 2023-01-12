@@ -8,6 +8,7 @@ class Content(models.Model):
     _name = 'blooming.content'
     contentId = fields.Integer()
     name = fields.Char()
+    location = fields.Char()
     uploadDate = fields.Date()
     albums = fields.Many2many("blooming.album",
                               string="Albums")

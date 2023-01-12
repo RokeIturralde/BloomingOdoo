@@ -6,7 +6,7 @@
         Module of our application Blooming""",
 
     'description': """
-        This app is able to 
+        This app is able to create albums for the children
     """,
 
     'author': "NERD S.L",
@@ -25,7 +25,10 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
+        'views/content.xml',
+        
         'views/templates.xml',
+        'views/plan.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
