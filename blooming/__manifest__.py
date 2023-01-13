@@ -3,13 +3,13 @@
     'name': "Blooming",
 
     'summary': """
-        Share your favourite pictures with your friends""",
+        Module of our application Blooming""",
 
     'description': """
-        From the cloud to your mind.
+        This app is able to create albums for the children
     """,
 
-    'author': "NERD S.L.",
+    'author': "NERD S.L",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -26,10 +26,12 @@
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/membershipPlan.xml',
+        'views/content.xml',
+        'views/ContentViews.xml',
         'views/templates.xml',
             ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        'demo/content.xml',
     ],
 }
