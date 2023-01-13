@@ -1,5 +1,9 @@
 <odoo>
   <data>
+    <menuitem name="Blooming" id="blooming.menu_root"/>
+    
+    <menuitem name="Blooming Management" id="blooming.menu_1" parent="blooming.menu_root"/>
+    
     <!-- explicit list view definition -->
     <!--
     <record model="ir.ui.view" id="blooming.list">

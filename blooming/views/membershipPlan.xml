@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" 
+            id="blooming.membershipplan_action_window">
+      <field name="name">Membership plan window</field>
+      <field name="res_model">blooming.membershipplan</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <!-- actions -->
+    <menuitem name="Membership plan management" 
+              id="blooming.menu_2_list" 
+              parent="blooming.menu_1"
+              action="blooming.membershipplan_action_window"/>
+    </data>
+</odoo>
