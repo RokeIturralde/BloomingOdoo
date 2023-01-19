@@ -13,5 +13,5 @@ class Album(models.Model):
     description = fields.Text(string="Description")
     creator = fields.Many2One('res.users', string="Creator", required=True, help="Login of the Album creator")
     users = fields.Many2Many('res.users', string="Users")
-    creationDate = fields.Date()
+    creationDate = fields.Date(string="Creation Date")
     contents = fields.Many2Many('blooming.content', string="Contents")
