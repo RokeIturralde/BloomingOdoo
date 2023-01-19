@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_challenge_tree_id">
+            <field name="name">Challenge List</field>
+            <field name="model">blooming.challenge</field>
+            <field name="arch" type="xml">
+                <tree string="Challenge list">
+                    <field name="name"/>
+                    <field name="challenge_id"/>
+                    <field name="end_date"></field>
+                    <field name="description"/>
+                    <field name="creator"/>
+                    <field name="participants">
+                        <!-- -->
+                    </field>
+                </tree>
+            </field>
+        </record>
+
+        <!--<record model="ir.ui.view" id="view_content_form">
+            
+        </record>-->
+    </data>
+</odoo>
