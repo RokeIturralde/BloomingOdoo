@@ -7,7 +7,7 @@ class MembershipPlan(models.Model):
     name = fields.Char()
     albumLimit = fields.Integer()
     description = fields.Char()
-    duration = fields.Char()
+    duration = fields.Integer()
     price = fields.Float()
     shareable = fields.Boolean()
     user_ids = fields.One2many("res.users", "id", string="User ids")
