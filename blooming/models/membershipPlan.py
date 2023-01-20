@@ -10,6 +10,7 @@ class MembershipPlan(models.Model):
     duration = fields.Char()
     price = fields.Float()
     shareable = fields.Boolean()
+    user_ids = fields.One2many("res.users", "id", string="User ids")
     
 #     name = fields.Char()
 #     value = fields.Integer()
