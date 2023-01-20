@@ -1,0 +1,45 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_content_list">
+            <field name="name">Contents List</field>
+            <field name="model">blooming.content</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <tree string="Content list">
+                    <field name="name"/>
+                    <field name="location"/>
+                    <field name="uploadDate"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_content_form">
+            <field name="name">Contents Form</field>
+            <field name="model">blooming.content</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <form string="Content form">
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="Content data" colspan="2"/>
+                            <field name="name"/>
+                            <field name="location"/>
+                            <field name="uploadDate"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_content_search">
+            <field name="name">Content Search</field>
+            <field name="model">blooming.content</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <search string="Content search">
+                    <field name="name"/>
+                    <field name="location"/>
+                    <field name="uploadDate"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

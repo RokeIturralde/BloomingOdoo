@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="client_info">
+            <field name="name">Client Information</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                
+                <notebook position="inside">
+                    <page string="Shared Albums">
+                        <group>
+                            <field name="sharedAlbums"/>
+                            <field name="createdAlbums"/>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</odoo>
