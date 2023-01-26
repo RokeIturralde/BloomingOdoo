@@ -8,9 +8,47 @@
             <field name="res_model">blooming.album</field>
             <field name="view_mode">tree,form</field>
         </record>
-   
+        
+        <!--Form view -->
+        <record model="ir.actions.act_window" id="blooming.album_action_window">
+            <field name="name">Album window</field>
+            <field name="model">blooming.album</field>
+            <form string="Album form">
+                <sheet>
+                    <group colspan="4">
+                        
+                    </group>
+                </sheet>
+            </form>
 
-   
+        </record>
+        
+        <!--Tree view -->
+        <record model="ir.ui.view"id="view_id">
+            <field name="name">Album window</field>
+            <field name="model">blooming.album</field>
+            <field name="priority"eval="16"/>
+            <field name="arch"type="xml">
+                <tree string="Album tree">
+                    <field name="name"/>
+                    <field name="inventor_id"/>
+                </tree>
+            </field>
+        </record>
+        
+        <!--Search view -->
+        <record model="ir.ui.view"id="view_id">
+            <field name="name">view.name</field>
+            <field name="model">object_name</field>
+            <field name="priority"eval="16"/>
+            <field name="arch"type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="inventor_id"/>
+                </search>
+            </field>
+        </record>
+        
         <!-- actions -->
    
         <menuitem name="Album Management" id="blooming.menu_3_list" parent="blooming.menu_1"
