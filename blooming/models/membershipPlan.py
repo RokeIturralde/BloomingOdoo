@@ -12,6 +12,16 @@ class MembershipPlan(models.Model):
     shareable = fields.Boolean()
     user_ids = fields.One2many("res.users", "id", string="User ids")
     
+    
+    
+#    @api.constrains('price')
+#    def _check_price(self):
+#        #for record in self:
+#        if self.price < 0:
+#            raise ValidationError("The price cannot be lower than 0: %s" % self.age)
+#    
+    
+    
 #     name = fields.Char()
 #     value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)

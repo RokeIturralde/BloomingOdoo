@@ -29,6 +29,7 @@
         'views/content.xml',
         'views/ContentViews.xml',
         'views/templates.xml',
+        "views/clientViews.xml",
             ],
     # only loaded in demonstration mode
     'demo': [
