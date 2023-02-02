@@ -10,5 +10,5 @@ class Challenge(models.Model):
      start_date = fields.Date()
      end_date = fields.Date()
      description = fields.Char(string="Challenge description", required=True, help="Description of the challenge")
-     creator=fields.Many2One('res.users', string="Creator")
-     participants=fields.Many2many("blooming.user", string="User")
+     creator=fields.Many2one('blooming.client', string="Creator")
+     participants=fields.Many2many("blooming.client", string="User")

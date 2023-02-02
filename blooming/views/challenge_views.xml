@@ -3,9 +3,9 @@
         <data>
             <!-- action opening views on models-->
              <record 
-            model="ir.actions.act_window"
-            id="challenge_action_window">
-                <field name="name">challenge.act_window</field>
+            model="ir.ui.view"
+            id="view_action_window">
+                <field name="name">Challenge view</field>
                 <field name="model">blooming.challenge</field>
                 <field name="view_mode">tree, form</field>
             </record>
@@ -30,7 +30,6 @@
                     </tree>
                 </field>
             </record>
-
 
 
             <record model="ir.ui.view" id="blooming.form">
