@@ -7,7 +7,11 @@
             <field name="priority" eval="16"/>
             <field name="arch" type="xml">
                 <tree string="Client list">
-                    
+                    <field name="login"/>
+                    <field name="creators"/>
+                    <field name="sharedAlbums"/>
+                    <field name="plan"/>
+                    <field name="challenges"/>
                 </tree>
             </field>
         </record>
@@ -20,6 +24,10 @@
                     <group colspan="4">
                         <group colspan="2" col="2">
                             <separator string="Client data" colspan="2"/>
+                            <field name="login"/>
+                            <field name="sharedAlbums"/>
+                            <field name="plan"/>
+                            <field name="challenges"/>
                         </group>
                     </group>
                 </form>
@@ -31,6 +39,8 @@
             <field name="priority" eval="16"/>
             <field name="arch" type="xml">
                 <search string="Client search">
+                    <field name="login"/>
+                    <field name="plan"/>
                 </search>
             </field>
         </record>

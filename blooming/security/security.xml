@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <record id="group_admin" model="res.groups">
+            <field name="name">Blooming / Admin</field>
+        </record>
+        <record id="group_client" model="res.groups">
+            <field name="name">Blooming / Client</field>
+        </record>
+    </data>
+</odoo>

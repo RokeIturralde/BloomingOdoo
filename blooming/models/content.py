@@ -10,7 +10,8 @@ class Content(models.Model):
     name = fields.Char(string="Content name", required=True, help="Name of the content")
     location = fields.Char(string="Content location", required=True, help="Location of the Content")
     uploadDate = fields.Date()
- 
+    albums = fields.Many2many('blooming.album', string="Albums")
+    
 class CustomText(models.Model):
     _inherit = 'blooming.content'
     text = fields.Text()

@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+
+        <!-- actions opening views on models -->
+    
+        <record model="ir.actions.act_window" 
+                id="blooming.challenge_action_window">
+            <field name="name">Challenge Window</field>
+            <field name="res_model">blooming.challenge</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- actions -->
+        <menuitem name="Challenge Management" 
+                  id="blooming.menu_4_list" 
+                  parent="blooming.menu_1"
+                  action="blooming.challenge_action_window"/>
+    </data>
+    
+</odoo>

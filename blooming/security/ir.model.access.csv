@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_blooming_blooming,blooming.blooming,model_blooming_blooming,,1,0,0,0
+content_client,client content,model_blooming_content,group_client,1,1,1,1
+membershipPlan_client,client membershipPlan,model_blooming_membershipPlan,group_client,1,0,0,0
+membershipPlan_admin,admin membershipPlan,model_blooming_membershipPlan,group_admin,1,1,1,1

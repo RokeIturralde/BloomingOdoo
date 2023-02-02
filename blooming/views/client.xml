@@ -10,7 +10,7 @@
     </record>
     <!-- actions -->
     <menuitem name="Client Management" 
-                  id="blooming.menu_1_list" 
+                  id="blooming.menu_5_list" 
                   parent="blooming.menu_1"
                   action="blooming.client_action_window"/>
     
