@@ -9,6 +9,7 @@
                     <field name="name"/>
                     <field name="location"/>
                     <field name="uploadDate"/>
+                    <field name="text"/>
                 </tree>
             </field>
         </record>
@@ -24,6 +25,7 @@
                             <field name="name"/>
                             <field name="location"/>
                             <field name="uploadDate"/>
+                            <field name="text"/>
                         </group>
                     </group>
                 </form>

@@ -1,17 +1,80 @@
 <odoo>
     <data>
-    <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" 
-            id="blooming.membershipplan_action_window">
-      <field name="name">Membership plan window</field>
-      <field name="res_model">blooming.membershipplan</field>
-      <field name="view_mode">tree,form</field>
-    </record>
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" 
+                id="blooming.membershipplan_action_window">
+            <field name="name">Membership plan window</field>
+            <field name="res_model">blooming.membershipplan</field>
+            <field name="view_mode">tree,form</field>
+        </record>
     
-    <!-- actions -->
-    <menuitem name="Membership plan management" 
-              id="blooming.menu_2_list" 
-              parent="blooming.menu_1"
-              action="blooming.membershipplan_action_window"/>
+        <!-- actions -->
+        <menuitem name="Membership plan management" 
+                  id="blooming.menu_2_list" 
+                  parent="blooming.menu_1"
+                  action="blooming.membershipplan_action_window"/>
+    
+    
+        <record model="ir.ui.view" id="blooming.list">
+            <field name="name">blooming list</field>
+            <field name="model">blooming.membershipplan</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="albumLimit"/>
+                    <field name="description"/>
+                    <field name="duration"/>
+                    <field name="price"/>
+                    <field name="shareable"/>
+                    <field name="user_ids"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="blooming.form">
+            <field name="name">blooming list</field>
+            <field name="model">blooming.membershipplan</field>
+            <field name="arch" type="xml">
+                <form string="Membership plan form">
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="General stuff" colspan="2"/>
+                            <field name="name"/>
+                            <field name="description"/>
+                        </group>
+                        <group colspan="2" col="2">
+                            <field name="albumLimit" colspan="2"/>
+                            <field name="duration"/>
+                            <field name="price"/>
+                        </group>
+                        <separator string="Shareable" colspan="2"/>
+                        <field name="shareable" nolabel="1"/>   
+                        <separator string="Users" colspan="2"/>
+                        <field name="user_ids"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <!-- Create form-->
+        
+        
+        <!--
+        <record model="ir.ui.view" id="blooming.list">
+          <field name="name">blooming list</field>
+          <field name="model">blooming.membershipplan</field>
+          <field name="arch" type="xml">
+            <form>
+              <field name="name"/>
+              <field name="albumLimit"/>
+              <field name="description"/>
+              <field name="duration"/>
+              <field name="price"/>
+              <field name="shareable"/>
+              <field name="user_ids"/>
+            </form>
+          </field>
+        </record>
+        -->
     </data>
 </odoo>

@@ -15,4 +15,5 @@
                   parent="blooming.menu_1"
                   action="blooming.content_action_window"/>
     </data>
+    
 </odoo>

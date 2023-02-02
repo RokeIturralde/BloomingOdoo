@@ -25,10 +25,10 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
-        'views/membershipPlan.xml',
         'views/content.xml',
         'views/ContentViews.xml',
-        'views/templates.xml',
+        'views/membershipPlan.xml',
+        
             ],
     # only loaded in demonstration mode
     'demo': [

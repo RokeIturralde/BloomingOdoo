@@ -1,22 +1,13 @@
-# -*- coding: utf-8 -*-
-
-from odoo import models, fields, api
+from odoo import api
+from odoo import fields
+from odoo import models
 
 class MembershipPlan(models.Model):
     _name = 'blooming.membershipplan'
     name = fields.Char()
     albumLimit = fields.Integer()
     description = fields.Char()
-    duration = fields.Char()
+    duration = fields.Integer()
     price = fields.Float()
     shareable = fields.Boolean()
-    
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
-
+    user_ids = fields.One2many("blooming.client", "id", string="User ids")

@@ -1,0 +1,39 @@
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="view_client_list">
+            <field name="name">Client List</field>
+            <field name="model">blooming.client</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <tree string="Client list">
+                    
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_client_form">
+            <field name="name">Client Form</field>
+            <field name="model">blooming.client</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <form string="Client form">
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="Client data" colspan="2"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_client_search">
+            <field name="name">Client Search</field>
+            <field name="model">blooming.client</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <search string="Client search">
+                </search>
+            </field>
+        </record>
+    </data>
+    
+</odoo>
