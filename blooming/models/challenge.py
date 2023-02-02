@@ -6,7 +6,7 @@ class Challenge(models.Model):
      _name = 'blooming.challenge'
      name = fields.Char()
 
-     challenge_id = fields.Integer()
+     challenge_id = fields.Integer(required=True)
      start_date = fields.Date()
      end_date = fields.Date()
      description = fields.Char(string="Challenge description", required=True, help="Description of the challenge")
