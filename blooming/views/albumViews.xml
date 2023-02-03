@@ -1,0 +1,45 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_album_list">
+            <field name="name">Album List</field>
+            <field name="model">blooming.album</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <tree string="Album list">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="creationDate"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_album_form">
+            <field name="name">Album Form</field>
+            <field name="model">blooming.album</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <form string="Album form">
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="Album data" colspan="2"/>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="creationDate"/>
+                            <field name="contents"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_album_search">
+            <field name="name">Album Search</field>
+            <field name="model">blooming.album</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <search string="Album search">
+                    <field name="name"/>
+                    <field name="creationDate"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

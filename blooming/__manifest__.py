@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "blooming",
+    'name': "Blooming",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Module of our application Blooming""",
 
     'description': """
-        Long description of module's purpose
+        This app is able to create albums for the children
     """,
 
-    'author': "My Company",
+    'author': "NERD S.L",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -26,10 +25,20 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
-        'views/templates.xml',
-    ],
+        'views/content.xml',
+        'views/ContentViews.xml',
+        'views/membershipPlan.xml',
+        'views/client.xml',
+        'views/clientView.xml',
+        'views/album.xml',
+        'views/albumViews.xml',
+        'views/challenge.xml',
+        'views/challengeView.xml',
+        
+        
+            ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        'demo/content.xml',
     ],
 }

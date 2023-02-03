@@ -1,0 +1,51 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_challenge_list">
+            <field name="name">Challenge List</field>
+            <field name="model">blooming.challenge</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <tree string="Challenge list">
+                   <field name="name"/>
+                   <field name="start_date"/>
+                   <field name="end_date"/>
+                   <field name="description"/>
+                   <field name="creator"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_challenge_form">
+            <field name="name">Challenge Form</field>
+            <field name="model">blooming.challenge</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <form string="Challenge form">
+                    <group colspan="4">
+                        <group colspan="2" col="2">
+                            <separator string="Challenge data" colspan="2"/>
+                            <field name="name"/>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                            <field name="description"/>
+                            <field name="creator"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_challenge_search">
+            <field name="name">Challenge Search</field>
+            <field name="model">blooming.challenge</field>
+            <field name="priority" eval="16"/>
+            <field name="arch" type="xml">
+                <search string="Challenge search">
+                    <field name="name"/>
+                   <field name="start_date"/>
+                   <field name="end_date"/>
+                   <field name="description"/>
+                   <field name="creator"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

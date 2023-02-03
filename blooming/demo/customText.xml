@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record model="blooming.content" id="1">
+            <field name= "contentId">1</field>
+            <field name= "name">Text1</field>
+            <field name="uploadDate">2022-12-16</field>
+            <field name="albums">Algo, lo que le cuelga al galgo</field>
+            <field name="text">Random text to add more information to your content</field>
+        </record>
+    </data>
+</odoo>
